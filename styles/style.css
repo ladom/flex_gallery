@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Jim+Nightshade&subset=latin-ext");
+.gallery {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex; }
+  .gallery .picture {
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    transition: font-size 0.7s cubic-bezier(0.6, -0.2, 0.7, -0.1), flex 0.7s cubic-bezier(0.6, -0.2, 0.7, -0.1), background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+  .gallery .picture1 {
+    background-image: url("../pictures/img01.jpg"); }
+  .gallery .picture2 {
+    background-image: url("../pictures/img02.jpg"); }
+  .gallery .picture3 {
+    background-image: url("../pictures/img03.jpg"); }
+  .gallery .picture4 {
+    background-image: url("../pictures/img04.jpg"); }
+  .gallery .picture5 {
+    background-image: url("../pictures/img05.jpg"); }
+  .gallery .picture > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .gallery .picture p {
+    text-transform: uppercase;
+    font-family: "Jim Nightshade", cursive;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.7), 0 0 14px rgba(0, 0, 0, 0.4);
+    font-size: 2em; }
+  .gallery .picture p:nth-child(2) {
+    font-size: 4em; }
+  .gallery .picture > *:first-child {
+    transform: translateY(-100%); }
+  .gallery .picture.open-active > *:first-child {
+    transform: translateY(0); }
+  .gallery .picture > *:last-child {
+    transform: translateY(100%); }
+  .gallery .picture.open-active > *:last-child {
+    transform: translateY(0); }
+  .gallery .picture.open {
+    flex: 12;
+    font-size: 40px; }
+
+/*# sourceMappingURL=style.css.map */
